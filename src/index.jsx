@@ -1,8 +1,11 @@
 import React from 'react';
 import { render } from 'react-dom';
+import Header from './components/commons/Header';
 import './style.css';
 
-const App = () => <h1>Hello World.</h1>
+const App = () => (<>
+  <Header title='Bookr App' color='white' bgColor='red'/>
+</>);
 
 render(<App />, document.querySelector('#root'));
 

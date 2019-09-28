@@ -1,2 +1,5 @@
-# webpack-template
-A simple webpack setup
+# Bookr
+A app to demostrate the use of react-redux for:
+- Signup
+- Login
+- Book CRUD
