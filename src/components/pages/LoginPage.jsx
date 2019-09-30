@@ -1,5 +1,6 @@
 import React, { Component } from 'react';
 import Form from '../commons/Form';
+import PageTemplate from '../commons/PageTemplate';
 
 const inputFields = [
   {
@@ -40,13 +41,15 @@ class LoginPage extends Component {
 
   render(){
     return (
-      <Form
-        formTitle='Login Form'
-        inputFields={inputFields}
-        buttonTitle='Login'
-        onChange={this.onChange}
-        onSubmit={this.onSubmit}
-      />
+      <PageTemplate>
+        <Form
+          formTitle='Login Form'
+          inputFields={inputFields}
+          buttonTitle='Login'
+          onChange={this.onChange}
+          onSubmit={this.onSubmit}
+        />
+      </PageTemplate>
     );
   }
 }
