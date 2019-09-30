@@ -29,6 +29,10 @@ const Form = ({
 
 Form.Container = styled.form`
   margin: 0.5rem;
+  border: solid 1px #333;
+  padding: 0.5rem;
+  text-align: center;
+  border-radius: 5px;
 `;
 
 export default Form;
