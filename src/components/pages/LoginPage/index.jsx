@@ -1,19 +1,7 @@
 import React, { Component } from 'react';
-import Form from '../commons/Form';
-import PageTemplate from '../commons/PageTemplate';
-
-const inputFields = [
-  {
-    name: 'email',
-    type: 'email',
-    placeholder: 'enter email'
-  },
-  {
-    name: 'password',
-    type: 'password',
-    placeholder: 'enter password'
-  }
-];
+import Form from '../../commons/Form';
+import PageTemplate from '../../commons/PageTemplate';
+import inputFields from './formData';
 
 class LoginPage extends Component {
   constructor(props){
