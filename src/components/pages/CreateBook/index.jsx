@@ -4,45 +4,47 @@ import PageTemplate from '../../commons/PageTemplate';
 import inputFields from './formData';
 
 class CreateBook extends Component {
-  constructor(props){
+  constructor(props) {
     super(props);
     this.state = {
-      title:  '',
+      title: '',
       author: '',
       publisher: '',
-      image: ''
-    }
+      image: '',
+    };
 
     this.onChange = (event) => {
       this.setState({
-        [event.target.name]: event.target.value
+        [event.target.name]: event.target.value,
       });
-    }
+    };
 
     this.onSubmit = (event) => {
       event.preventDefault();
-      const { title, author, publisher, image } = this.state;
+      const {
+        title, author, publisher, image,
+      } = this.state;
       const formData = {
-          title,
-          author,
-          publisher,
-          image
+        title,
+        author,
+        publisher,
+        image,
       };
-    }
+    };
   }
 
-  render(){
+  render() {
     return (
       <PageTemplate>
-        <Form 
-          formTitle='Create Book'
+        <Form
+          formTitle="Create Book"
           inputFields={inputFields}
-          buttonTitle='create'
+          buttonTitle="create"
           onChange={this.onChange}
           onSubmit={this.onSubmit}
         />
       </PageTemplate>
-    )
+    );
   }
 }
 
