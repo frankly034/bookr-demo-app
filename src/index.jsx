@@ -4,7 +4,7 @@ import './style.css';
 import LoginPage from './components/pages/LoginPage';
 
 const App = () => (
-  <LoginPage />
+    <LoginPage />
 )
 
 render(<App />, document.querySelector('#root'));
